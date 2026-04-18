@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>YBL</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url("UAIBIEU XTRANH0.png") no-repeat center center/cover;
+  background-color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+  filter: contrast(110%) grayscale(100%);
+}
+</style>
+</head>
+
+<body>
+
+  <!-- IMAGEM CENTRAL -->
+  <img src="cart0n uaibieu.png" alt="YBL EM BREVE">
+
+  <!-- ÁUDIO -->
+  <audio id="bgm" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    document.addEventListener("click", () => {
+      const audio = document.getElementById("bgm");
+      audio.volume = 0.3;
+      audio.play();
+    }, { once: true });
+  </script>
+
+</body>
+</html>
